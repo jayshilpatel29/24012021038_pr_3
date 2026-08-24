@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/txtWebUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Web Url:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etWeb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:inputType="textUri"
+        app:layout_constraintStart_toEndOf="@id/txtWebUrl"
+        app:layout_constraintEnd_toStartOf="@id/btn_browse"
+        app:layout_constraintTop_toTopOf="@id/txtWebUrl"
+        android:text="hppts://uvpce.guni.ac.in"/>
+
+    <Button
+        android:id="@+id/btn_browse"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Browse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtWebUrl"/>
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No.:"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWeb"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:inputType="phone"
+        app:layout_constraintStart_toEndOf="@id/tvPhone"
+        app:layout_constraintEnd_toStartOf="@id/btn_call"
+        app:layout_constraintTop_toTopOf="@id/tvPhone"
+        android:text="+919723414877"/>
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPhone"/>
+
+    <!-- Call Log -->
+
+    <TextView
+        android:id="@+id/tvCallLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Call Log:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPhone" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Call Log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCallLog"/>
+
+    <!-- Gallery -->
+
+    <TextView
+        android:id="@+id/tvGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="Gallery:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCallLog" />
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvGallery"/>
+
+    <!-- Camera -->
+
+    <TextView
+        android:id="@+id/tvCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Camera:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGallery" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCamera"/>
+
+    <!-- Alarm -->
+
+    <TextView
+        android:id="@+id/tvAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="Alarm:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCamera" />
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvAlarm"/>
+
+    <!-- Login -->
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Login:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAlarm" ></TextView>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvLogin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
